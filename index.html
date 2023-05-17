@@ -2,21 +2,70 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"
-        <title>Test</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Remynder0</title>
     </head>
     <body>
-        <quote>V1</quote>
-        <h1>Test site</h1>
-        <p> texte test texte test texte test 
-            texte test texte test texte test 
-            texte test texte test texte test 
-        </p>
+        <quote>V1.2</quote>
+        <h1>Voici mon site GitHub pour présenter mes projets</h1>
+        <p> Pour l'instant la présentation est très sommaire avec du CSS basique. </p>
+        <p> Il y a une liste avec les liens de mes différents projet qui seront mis à jour regulièrement.</p>
+        <p>Quick Tips : <strong>Vert</strong> lien actif <strong>Orange</strong> lien inactif </p>
         <ul>
             <li>
-                <a href="../nords_stuff/accueil.html">site Nords stuff</a>
+                <a href="../nords_stuff/accueil.html">Nords stuff</a>
+            </li>
+            <li>
+                <a href="">Gamer Test</a>
+            </li>
+            <li>
+                <a href="">Modeste Tour</a>
+            </li>
+            <li>
+                <a href="">Game of Life</a>
             </li>
         </ul>
 
     </body>
+    <style>
+        body {
+            background-color: dimgrey;
+            margin: 25px;
+        }
+        quote{
+            color: sandybrown;
+            font-size: 2em;
+            font-style: italic;
+        }
+        h1{
+            font-size: 4em;
+            text-align: center;
+            margin: 2.5em;
+        }
+        p {
+            text-align: center;
+            font-size: 3em;
+            margin: 1.5em;
+        }
+        p strong:first-child{
+            color: rgb(0, 255, 170);
+        }
+        p strong:last-child{
+            color: goldenrod;
+        }
+        ul{
+            margin: 3em;
+            margin-left: 6em;
+        }
+        li:first-child{
+            color: rgb(0, 255, 170);
+        }
+        li{
+            font-size: 2em;
+            color: goldenrod;
+        }
+        li::marker{
+            font-size: 250%;
+        }
+    </style>
 </html>
