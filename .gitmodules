@@ -1,0 +1,3 @@
+[submodule "nords_stuff"]
+	path = nords_stuff
+	url = https://github.com/Remynder0/nords_stuff.git
