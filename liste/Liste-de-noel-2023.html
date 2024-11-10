@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" lang="fr">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="script.js"></script>
         <title>Liste de Noël</title>
     </head>
     <header>
@@ -42,12 +43,31 @@
                 </figure>
             </li>
             <li>
-                <figure style="display: none;">
-                    <img title="30€" src="https://gaming-cdn.com/images/products/432/616x353/instant-gaming-carte-cadeau-30eur-eur30-card-pc-mac-jeu-cover.jpg?v=1684295682" alt="carte cadeau instant gaming">
-                    <figcaption><a target="_blank" href="https://www.instant-gaming.com/fr/432-acheter-instant-gaming-carte-cadeau-30eur-eur30-card-pc-mac-jeu/?igr=Remynder">carte cadeau instant gaming</a> <em>(instantanée)</em></figcaption>
+                <figure>
+                    <img title="26,99€" src="https://m.media-amazon.com/images/I/61JBnyOq7PL._AC_SL1500_.jpg" alt="">
+                    <figcaption><a target="_blank" href="https://www.amazon.fr/dp/B09TR9LXXW/?coliid=IUM3OO295AQVD&colid=EA6U1IF57HRN&ref_=list_c_wl_lv_ov_lig_dp_it&th=1">pack clé usb résistante</a> <em></em></figcaption>
                 </figure>
             </li>
         </ol>
+        <form id="form-nom"  >
+            <div>
+                <div>
+                    <label for="submit">Nom :</label>
+                </div>
+                <div>
+                    <input type="text" id="nom" name="name" />
+                </div>
+                </div>
+            
+            <div>
+                <input type="button" id="submit" class="submit" name="valider" value="Valider" />
+            </div>
+
+        </form>
+        <script>
+            "use strict";
+            init();
+        </script>
     </body>
 </html>
 <style type="text/css">
@@ -94,6 +114,16 @@
     figcaption{
         text-align: center;
         margin: 5px;
+    }
+
+    #form-nom{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.5);
+        text-align: center;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     }
 
 </style>
