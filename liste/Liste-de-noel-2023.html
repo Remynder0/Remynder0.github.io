@@ -13,38 +13,47 @@
         <p class="intro"></p>
         <ol>
             <li>
-                <figure>
-                    <img title="31,99€" src="https://merch.riotgames.com/_next/image/?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fdsfx7636%2Fconsumer_products%2F8e3ef87da56929e4d8daae124c2b981e2adb2e66-2560x2560.png&w=1920&q=75" alt="Bonnet HEARTSTEEL Sett">
-                    <figcaption><a target="_blank" href="https://merch.riotgames.com/fr-fr/product/heartsteel-sett-beanie/">Bonnet</a> <em>(en rupture)</em></figcaption>
+                <figure class="produit">
+                    <img src="https://merch.riotgames.com/_next/image/?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fdsfx7636%2Fconsumer_products%2F8e3ef87da56929e4d8daae124c2b981e2adb2e66-2560x2560.png&w=1920&q=75" alt="Bonnet HEARTSTEEL Sett">
+                    <span class="prix">31,99€€</span>
+                    <figcaption>
+                        <a  target="_blank" href="https://merch.riotgames.com/fr-fr/product/heartsteel-sett-beanie/">Bonnet</a> <em>(en rupture)</em>
+                        
+                    </figcaption>
                 </figure>
             </li>
             <li>
-                <figure>
-                    <img title="44,25€" src="https://shop.otp.tv/cdn/shop/files/OTP-MERCH-2K24-BY-MAXIME-P-27_ca226f23-9cb0-4e1f-bd87-aaf244470599_3000x.jpg?v=1727788366" alt="Hoodie">
+                <figure class="produit">
+                    <img src="https://shop.otp.tv/cdn/shop/files/OTP-MERCH-2K24-BY-MAXIME-P-27_ca226f23-9cb0-4e1f-bd87-aaf244470599_3000x.jpg?v=1727788366" alt="Hoodie">
+                    <span class="prix">44,25€</span>
                     <figcaption><a target="_blank" href="https://shop.otp.tv/collections/fw-2022/products/hoodie-fw2024?variant=50032226664792">Hoodie</a> <em>(7-12 jours ouvrés)</em></figcaption>
                 </figure>
             </li>
             <li>
-                <figure>
-                    <img title="64,99€" src="https://m.media-amazon.com/images/I/71J4ifpWRyL._AC_SX522_.jpg" alt="">
+                <figure class="produit">
+                    <img src="https://m.media-amazon.com/images/I/71J4ifpWRyL._AC_SX522_.jpg" alt="">
+                    <span class="prix">64,99€</span>
                     <figcaption><a target="_blank" href="https://www.amazon.fr/dp/B09DCK5GKN/?coliid=I1HP6BHFQV71XN&colid=EA6U1IF57HRN&psc=1&ref_=list_c_wl_lv_ov_lig_dp_it">Montre</a> <em></em></figcaption>
                 </figure>
             </li>
             <li>
-                <figure>
-                    <img title="229,99€" src="https://m.media-amazon.com/images/I/715V8zMekML._AC_SX425_.jpg" alt="ecran">
+                <figure class="produit">
+                    <img src="https://m.media-amazon.com/images/I/715V8zMekML._AC_SX425_.jpg" alt="ecran">
+                    <span class="prix">278,52€</span>
                     <figcaption><a target="_blank" href="https://www.amazon.fr/dp/B08P6YMRP1/?coliid=IY78EO719BOG5&colid=EA6U1IF57HRN&psc=1&ref_=list_c_wl_lv_ov_lig_dp_it">Ecran</a> <em>(7 jours ouvrés)</em></figcaption>
                 </figure>
             </li>
             <li>
-                <figure >
-                    <img title="" src="https://e7.pngegg.com/pngimages/184/626/png-clipart-computer-icons-encapsulated-postscript-boxer-shorts-undergarment-angle-text.png" alt="">
+                <figure class="produit">
+                    <img src="https://e7.pngegg.com/pngimages/184/626/png-clipart-computer-icons-encapsulated-postscript-boxer-shorts-undergarment-angle-text.png" alt="">
+                    
                     <figcaption><a target="_blank" href="">Caleçon</a> <em></em></figcaption>
                 </figure>
             </li>
             <li>
-                <figure>
-                    <img title="26,99€" src="https://m.media-amazon.com/images/I/61JBnyOq7PL._AC_SL1500_.jpg" alt="">
+                <figure class="produit">
+                    <img src="https://m.media-amazon.com/images/I/61JBnyOq7PL._AC_SL1500_.jpg" alt="">
+                    <span class="prix">26,99€</span>
                     <figcaption><a target="_blank" href="https://www.amazon.fr/dp/B09TR9LXXW/?coliid=IUM3OO295AQVD&colid=EA6U1IF57HRN&ref_=list_c_wl_lv_ov_lig_dp_it&th=1">pack clé usb résistante</a> <em></em></figcaption>
                 </figure>
             </li>
@@ -135,6 +144,27 @@
         padding: 1.2em 3em;
         border: 0px solid greenyellow;
         border-radius: 15px;
+    }
+
+    .produit { 
+        position: relative; 
+        display: inline-block; 
+    } 
+    .produit .prix { 
+        visibility: hidden; 
+        background-color: black; 
+        color: #fff; 
+        text-align: center; 
+        border-radius: 5px; 
+        padding: 5px; 
+        position: absolute; 
+        z-index: 1; 
+        bottom: 70%; /* Positionnez le texte au-dessus de l'élément */ 
+        left: 50%; 
+        margin-left: 25%; /* Centrez le texte */ 
+    } 
+    .produit:hover .prix { 
+        visibility: visible; 
     }
 
 </style>
