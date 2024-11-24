@@ -160,4 +160,25 @@
         border-radius: 15px;
     }
 
+    .produit { 
+        position: relative; 
+        display: inline-block; 
+    } 
+    .produit .prix { 
+        visibility: hidden; 
+        background-color: black; 
+        color: #fff; 
+        text-align: center; 
+        border-radius: 5px; 
+        padding: 5px; 
+        position: absolute; 
+        z-index: 1; 
+        bottom: 70%; /* Positionnez le texte au-dessus de l'élément */ 
+        left: 50%; 
+        margin-left: 25%; /* Centrez le texte */ 
+    } 
+    .produit:hover .prix { 
+        visibility: visible; 
+    }
+
 </style>
