@@ -4,3 +4,6 @@
 [submodule "gamer_quiz"]
 	path = gamer_quiz
 	url = https://github.com/Remynder0/gamer_quiz
+[submodule "night_city"]
+	path = night_city
+	url = https://github.com/Remynder0/night_city
